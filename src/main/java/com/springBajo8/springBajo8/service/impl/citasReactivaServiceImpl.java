@@ -82,7 +82,6 @@ public class citasReactivaServiceImpl implements IcitasReactivaService {
     public String findNombreMedico(String citaId){
         citasDTOReactiva cita =findById(citaId).block();
         return cita!=null?"Su medico es: "+cita.getNombreMedico()+" "+cita.getApellidosMedico():"No se encontró la cita";
-
     }
 
 
